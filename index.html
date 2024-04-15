@@ -336,6 +336,8 @@
         <div class="social-icons">
             <a href="https://github.com/NhanVux" target="_blank"><i class="fab fa-github"></i></a>
         </div>
+        <br>
+        Last Updated: <span id="last-updated-date"></span>
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -357,5 +359,30 @@
             });
         });
     </script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll('.nav-link-box');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update the 'Last Updated' date in the footer
+        document.getElementById('last-updated-date').textContent = document.lastModified;
+    });
+</script>
+
 
 </body>
