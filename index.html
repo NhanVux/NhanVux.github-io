@@ -339,26 +339,6 @@
         <br>
         Last Updated: <span id="last-updated-date"></span>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const navLinks = document.querySelectorAll('.nav-link-box');
-
-            navLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    const targetSection = document.getElementById(targetId);
-
-                    if (targetSection) {
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 
     <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -380,9 +360,17 @@
         });
 
         // Update the 'Last Updated' date in the footer
-        document.getElementById('last-updated-date').textContent = document.lastModified;
+        const lastModifiedDate = new Date(document.lastModified);
+        const formattedDate = lastModifiedDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        document.getElementById('last-updated-date').textContent = formattedDate;
     });
 </script>
+
+    
 
 
 </body>
