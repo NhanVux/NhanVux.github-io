@@ -1,0 +1,361 @@
+<!-- FILEPATH: /C:/U</div>sers/Nhan/Downloads/assign4/index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>My Portfolio</title>
+    <!-- <link rel="stylesheet" href="styles\style.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: Esteban, Georgia, 'Times New Roman', serif;
+            background-color: #0B0C10;
+            color: #FEFFFF;
+            font-size: 20px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url("images/photo-1510936111840-65e151ad71bb.png");
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .navbar {
+            background-color: #1F2833;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            color: #00f;
+        }
+
+        #welcome {
+
+            background-size: cover;
+            background-position: center;
+            color: #66FCF1;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #welcome h1,
+        #welcome p {
+            margin-bottom: 20px;
+            font-size: 48px;
+        }
+
+        #welcome p {
+            font-size: 24px;
+        }
+
+        #nav-boxes .nav-box {
+            border-radius: 25px;
+            margin: 10px;
+            padding: 20px;
+            background-color: #1F2833;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        #nav-boxes .nav-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+        }
+
+
+        .nav-link-box {
+            color: #FFFFFF;
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-link-box:hover {
+            text-decoration: underline;
+
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+
+            color: #FFFFFF;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            color: #5AB9EA;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #D4F1F4;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #quote-section {
+            padding: 40px 0;
+            color: #66FCF1;
+        }
+
+        .inspirational-quote {
+            font-size: 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            position: relative;
+            font-style: italic;
+        }
+
+        .inspirational-quote footer {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #C5C6C7;
+        }
+
+        .download-btn {
+            color: #FFFFFF;
+            border-color: #FFFFFF;
+            background-color: transparent;
+        }
+
+        .circle-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #logo-gallery .row {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <section id="welcome">
+            <div class="container">
+                <h1>Welcome to Nhan Vu E-Portfolio</h1>
+                <p>Here you will find information about me and my projects.</p>
+            </div>
+        </section>
+        <section id="logo-section" class="container mt-3">
+            <div class="row">
+                <div class="col text-center">
+                    <img src="images/saskpolytech.png" alt="SaskPolytech Logo" class="logo">
+                    <br>
+                    <a href="Vu_Nhan_Resume.docx.pdf" class="btn btn-outline-light mt-3 download-btn"
+                        download="NhanVu_Resume">
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="nav-boxes" class="container mt-5">
+            <div class="row">
+                <div class="col text-center nav-box" id="about-box">
+                    <a href="#about" class="nav-link-box">About</a>
+                </div>
+                <div class="col text-center nav-box" id="projects-box">
+                    <a href="#projects" class="nav-link-box">Projects</a>
+                </div>
+
+            </div>
+        </section>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+            tabindex="0"></div>
+        <section id="about" class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Nhan Vu, and currently enrolled in the Computer Systems Technology program at
+                        Saskatchewan Polytechnic. With a deep-rooted interest in technology and innovation, I have been
+                        delving into the world of coding and software development. As a student, I am actively involved
+                        in projects that span web development, system administration, and software engineering,
+                        constantly seeking to expand my knowledge and skills in this dynamic field.</p>
+
+                    <p>In my free time, I enjoy reading about new technology trends (AI), gaming, and music. I'm always
+                        eager to learn new skills and take on challenging projects that push the boundaries of my
+                        knowledge and abilities.</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="education-experience" class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Education & Experience</h2>
+                    <h3>Education</h3>
+                    <p><strong>Computer Systems Technology</strong> - Saskatchewan Polytechnic, Regina, SK (July 2022 -
+                        June 2024)</p>
+                    <ul>
+                        <li>Comprehensive Programming Skills (Java, html, css, js)</li>
+                        <li>Network and Systems Administration</li>
+                        <li>Web Development and Design</li>
+                        <li>Database and Security Management</li>
+                        <li>Member of the capstone project (<a href="https://thecleandivorce.com" target="_blank">The
+                                Clean Divorce</a>)</li>
+                        </li>
+                    </ul>
+
+                    <section id="logo-gallery" class="container mt-5">
+                        <div class="row justify-content-center">
+                            <div class="col-auto">
+                                <img src="images\Java_(programming_language)-Logo.wine.svg" alt="Logo 1" class="circle-logo">
+                            </div>
+                            <div class="col-auto">
+                                <img src="images\js-logo.webp" alt="Logo 2" class="circle-logo">
+                            </div>
+                            <div class="col-auto">
+                                <img src="images\HTML-5-Badge-Logo.png" alt="Logo 3" class="circle-logo">
+                            </div>
+                            <div class="col-auto">
+                                <img src="images\C_Sharp_Logo_2023.svg" alt="Logo 4" class="circle-logo">
+                            </div>
+                            <div class="col-auto">
+                                <img src="images\695px-C_Programming_Language.svg.png" alt="Logo 5" class="circle-logo">
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <h3>Professional Experience</h3>
+                    <p><strong>Crew Trainer</strong>, McDonald’s - Regina, SK (May 2023 – Present)</p>
+                    <ul>
+                        <li>Provided excellent customer service, ensuring timely and friendly interactions, while
+                            efficiently managing financial transactions at the cash register.</li>
+                        <li>Prepared and served food and beverages in accordance with McDonald’s standards, focusing on
+                            quality and customer satisfaction.</li>
+                        <li>Maintained cleanliness and hygiene in both kitchen and dining areas, adhering to health and
+                            safety regulations.</li>
+                        <li>Collaborated with team members to meet sales targets and support a positive, productive work
+                            atmosphere.</li>
+                        <li>Resolved customer complaints with a positive attitude, demonstrating problem-solving skills
+                            to ensure customer retention and satisfaction.</li>
+                        <li>Participated in training and development sessions, improving knowledge and skills for
+                            enhanced performance in fast-paced restaurant operations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container mt-5">
+            <h2 class="text-center">Projects & Artifacts</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="project-item">
+                        <h3>Monopoly Game Development</h3>
+                        <img src="images\2c48755938d4e51ca8f76ced8b3912af.png" alt="Monopoly Project"
+                            style="max-width: 100%; height: auto;">
+                        <p>This project involved creating a digital version of Monopoly from scratch, utilizing Javalin
+                            for the backend with Java, and HTML, CSS, JS for the frontend. Despite being new to both Git
+                            and Javalin, our team managed to implement player movement and a scoring system within a
+                            one-month timeframe.</p>
+                        <p><strong>Reflection:</strong> This project was a significant learning curve, as it was our
+                            first time using Git and Javalin. Achieving what we did in just one month, especially when
+                            starting from zero knowledge on these tools, was a testament to our team's quick learning
+                            and adaptability. The experience taught us not only about the technologies but also about
+                            teamwork and the importance of clear communication in software development.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-item">
+                        <h3>The Clean Divorce</h3>
+                        <img src="images\da2c83_779a51fe4f20450490e69c357c3b7358~mv2.webp" alt="Monopoly Project"
+                            style="max-width: 100%; height: auto; margin-left: auto; margin-right: auto; display: block;">
+                        <p>A capstone project focused on building a website to support individuals through their divorce
+                            process, offering coaching and solutions to related challenges. Despite the limitations of
+                            using Wix, which constrained our coding capabilities, the project offered an extensive
+                            8-month learning journey.</p>
+                        <p><strong>Challenges:</strong> Working within the confines of Wix presented unique challenges,
+                            particularly with custom coding limitations. However, these obstacles pushed us to explore
+                            creative solutions and leverage Wix's features to their fullest potential.</p>
+                        <p><strong>Reflection:</strong> Learning new technologies and navigating client expectations
+                            were pivotal aspects of this project. The culmination of our efforts was the client using
+                            our project as their main website, a testament to the practical impact and success of our
+                            work. Being a contributing member of this project's journey to production is a source of
+                            immense pride.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="project-item">
+                        <h3>Books Search Website</h3>
+                        <img src="images\Google_Books_logo_2015.png" alt="Monopoly Project"
+                            style="max-width: 100%; height: auto; margin-left: auto; margin-right: auto; display: block;">
+                        <p>This project entailed developing a website to search for books using the Google
+                            Books API, built with Vue.js, JavaScript, HTML, CSS, and SQLite. The complexity of Vue.js
+                            presented a steep learning curve, but mastering it proved invaluable for creating a dynamic,
+                            user-friendly interface.</p>
+                        <p><strong>Challenges:</strong> Integrating the Google Books API and navigating Vue.js’s
+                            intricate features were significant hurdles. The project demanded extensive research and
+                            self-study, particularly for understanding Vue's reactivity and component-based
+                            architecture.</p>
+                        <p><strong>Reflection:</strong> This project was a milestone in my development journey,
+                            showcasing my ability to self-learn and tackle complex APIs and frameworks. Achieving an 89%
+                            grade as a solo endeavor reflects not just on the project's success but also on my
+                            dedication to overcoming challenges and my capability in software development.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer class="footer">
+        &copy; Copyright 2024 Nhan Vu <br>
+        Contact me at: <a href="trongnhanvu4@gmail.com">trongnhanvu4@gmail.com</a> <br>
+
+        <div class="social-icons">
+            <a href="https://github.com/NhanVux" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll('.nav-link-box');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
